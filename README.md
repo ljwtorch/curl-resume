@@ -3,7 +3,7 @@
 一个炫酷的终端动画项目，通过 `curl` 命令即可在终端中展示带动画效果的任何内容。
 
 ```bash
-curl -N me.pdjjq.org
+curl -SNL me.pdjjq.org
 ```
 
 ## Demo
