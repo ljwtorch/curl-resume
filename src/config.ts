@@ -11,7 +11,7 @@ export const config: Config = {
       typing: 20, // 打字速度 (ms)
       typingPause: 100, // 标点停顿 (ms)
       transition: 80, // 切换动画速度 (ms)
-      effect: 50, // 动效速度 (ms)
+      effect: 40, // 动效速度 (ms)
     },
 
     // 颜色主题
@@ -31,11 +31,11 @@ export const config: Config = {
     // {
     //   type: "logo",
     //   content: {
-    //     text: "DJJ", // 要转换为ASCII大字的文本
-    //     subtitle: "Department of Joke Justice",
-    //     tagline: "说烂笑话必遭审判",
+    //     text: "一个命令行展示工具", // 要转换为ASCII大字的文本
+    //     subtitle: "I don't know what the fuck going on, Just kidding.",
+    //     tagline: "",
     //   },
-    //   effect: "glitch", // 内容动效: none | typing | decrypt | glitch | matrix
+    //   effect: "none", // 内容动效: none | typing | decrypt | glitch | matrix
     //   transition: "none", // 过渡动画: none | fade | glitch | scanline
     // },
 
@@ -62,17 +62,17 @@ export const config: Config = {
       },
       effect: "matrix",
       transition: "fade",
-      stayTime: 1000,
+      stayTime: 2000,
     },
     // 3. 纯文本演示
     {
       type: "raw",
       content: {
-        text: "I don't know what the fuck going on, Just kidding.",
+        text: "记住了我给你的好是我好，是我给你机会享受我的好，你没资格得了便宜还卖乖!",
       },
       effect: "decrypt", // 解密效果
       transition: "fade",
-      stayTime: 100,
+      stayTime: 2000,
     },
     // 4. Markdown 演示
     {
@@ -81,10 +81,10 @@ export const config: Config = {
         markdown: `
 ## 家规
 
-1. 花花永远是对的
-2. 什么都听花花的
-3. 不能惹花花生气
-4. 如果花花错了,请看第一条
+1. 花花永远是对的;
+2. 什么都听花花的;
+3. 不能惹花花生气;
+4. 如果花花错了,请看第一条;
 
 `,
       },
