@@ -40,64 +40,52 @@ export const config: Config = {
     // },
 
     // 1. GIF 演示
-    {
-      type: "image",
-      content: {
-        src: "assets/nyoncat.gif",
-        width: 50,
-        colored: true,
-        animated: true,
-      },
-      effect: "none",
-      transition: "fade"
-    },
+    // {
+    //   type: "image",
+    //   content: {
+    //     src: "assets/rog.gif",
+    //     width: 50,
+    //     colored: true,
+    //     animated: true,
+    //   },
+    //   effect: "none",
+    //   transition: "fade"
+    // },
     // 2. 图像演示
     {
       type: "image",
       content: {
-        src: "assets/DJJ.png",
+        src: "assets/huitailang.png",
         width: 50,
         colored: true,
         animated: false,
       },
       effect: "matrix",
       transition: "fade",
-      stayTime: 2000,
+      stayTime: 1000,
     },
     // 3. 纯文本演示
     {
       type: "raw",
       content: {
-        text: "反抗吧，朋友！",
+        text: "I don't know what the fuck going on, Just kidding.",
       },
       effect: "decrypt", // 解密效果
       transition: "fade",
-      stayTime: 1000,
+      stayTime: 100,
     },
     // 4. Markdown 演示
     {
       type: "markdown",
       content: {
         markdown: `
-## About DJJ
+## 家规
 
-"DJJ" 的正确的解读是: Department of Joke Justic (说烂笑话必遭审判) 或者 丁基胶 (一种重要的化工原料)
+1. 花花永远是对的
+2. 什么都听花花的
+3. 不能惹花花生气
+4. 如果花花错了,请看第一条
 
-我喜欢创造的过程和结果. 我憎恶无聊的事情, 我绝对不做只用传教士体位的人.
-
-钓鱼是我最喜欢的活动, 在河边能够感受到一种真正的平静.
-
-钓鱼是付出和等待的艺术, 这是很少有人具备的品质.
-
-
-## 怎么实现的?
-
-https://github.com/TokenRollAI/curl-resume
-
----
-
-Follow Me: https://github.com/Disdjj
-Connact Me: shuaiqijianhao@qq.com
 `,
       },
       effect: "typing", // 打字机效果

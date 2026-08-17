@@ -25,13 +25,13 @@ curl -SNL me.pdjjq.org
 ### 1. 安装依赖
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 2. 预处理资源
 
 ```bash
-npm run preprocess
+pnpm run preprocess
 ```
 
 这会处理配置中的图片和 Markdown，生成预处理数据。
@@ -39,7 +39,7 @@ npm run preprocess
 ### 3. 本地开发
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 然后在另一个终端测试：
@@ -53,7 +53,7 @@ curl -N http://localhost:8789
 ### 4. 部署到 Cloudflare
 
 ```bash
-npm run deploy
+pnpm run deploy
 ```
 
 ## 配置说明
@@ -216,7 +216,7 @@ export const config: Config = {
 ## 构建流程
 
 ```
-npm run preprocess
+pnpm run preprocess
        ↓
 ┌──────────────────────────────────┐
 │  scripts/preprocess.ts           │
@@ -227,7 +227,7 @@ npm run preprocess
        ↓
    src/preprocessed-data.ts
        ↓
-npm run deploy → Cloudflare Workers
+pnpm run deploy → Cloudflare Workers
 ```
 
 ## 自定义域名
@@ -245,7 +245,7 @@ routes = [{ pattern = "your.domain.com/*", zone_name = "domain.com" }]
 ### 3. 部署
 
 ```bash
-npm run deploy
+pnpm run deploy
 ```
 
 ## 技术栈

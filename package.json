@@ -4,12 +4,13 @@
   "description": "A curl-accessible terminal resume powered by Cloudflare Workers",
   "main": "src/index.js",
   "type": "module",
+  "packageManager": "pnpm@11.22.0",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "tail": "wrangler tail",
-    "preprocess": "FORCE_COLOR=1 npx tsx scripts/preprocess.ts",
-    "build": "npm run preprocess && wrangler deploy --dry-run"
+    "preprocess": "FORCE_COLOR=1 pnpm exec tsx scripts/preprocess.ts",
+    "build": "pnpm run preprocess && wrangler deploy --dry-run"
   },
   "keywords": [
     "resume",

@@ -1,4 +1,4 @@
-#!/usr/bin/env npx tsx
+#!/usr/bin/env -S pnpm exec tsx
 /**
  * 构建时图片预处理脚本
  * 在 Node.js 环境运行，支持本地文件和 Jimp 高质量处理
