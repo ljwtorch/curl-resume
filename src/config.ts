@@ -68,11 +68,11 @@ export const config: Config = {
     {
       type: "raw",
       content: {
-        text: "记住了我给你的好是我好，是我给你机会享受我的好，你没资格得了便宜还卖乖!",
+        text: "摘下最喜欢的麦穗，然后闭着眼睛穿过整个麦田。",
       },
       effect: "decrypt", // 解密效果
       transition: "fade",
-      stayTime: 2000,
+      stayTime: 2500,
     },
     // 4. Markdown 演示
     {
